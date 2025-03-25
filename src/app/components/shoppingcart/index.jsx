@@ -1,5 +1,17 @@
 import styles from "./shoppingcart.module.css"
 
+const cartItems = [
+    { id: 2, title: "Conexões Invisíveis", quantity: 1, price: 39.9 },
+    { id: 5, title: "A Linguagem Secreta", quantity: 1, price: 42.9 },
+  ];
+
+  const calculateTotal = () => {
+    return cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+  };
+
 const ShoppingCart = () => {
     return (
         <div className={styles.shoppingCart}>

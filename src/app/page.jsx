@@ -7,6 +7,7 @@ import Categories1 from "./components/categories";
 import Newreleases from "./components/newreleases";
 import Subscription from "./components/subscription";
 import ShoppingCart from "./components/shoppingcart";
+import Overlay from "./components/overlay";
 
 
 export default function Home() {
@@ -155,7 +156,7 @@ export default function Home() {
       <HeroBanner />
 
       {/* FEATURED BOOKS SECTION */}
-     <Featured />
+      <Featured />
 
       {/* CATEGORIES SECTION */}
       <Categories1 />
@@ -173,7 +174,7 @@ export default function Home() {
       <Footer />
 
       {/* OVERLAY */}
-      <div className={styles.overlay}></div>
+      <Overlay />
 
       {/* SCROLL TO TOP BUTTON */}
       <button className={styles.scrollTop}>↑</button>
