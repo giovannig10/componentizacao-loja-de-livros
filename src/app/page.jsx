@@ -5,6 +5,7 @@ import HeroBanner from "./components/herobanner";
 import Featured from "./components/featured";
 import Categories1 from "./components/categories";
 import Newreleases from "./components/newreleases";
+import Subscription from "./components/subscription";
 
 
 export default function Home() {
@@ -162,25 +163,7 @@ export default function Home() {
       <Newreleases />
 
       {/* SUBSCRIPTION SECTION */}
-      <section className={styles.subscriptionSection}>
-        <div className={styles.subscriptionContent}>
-          <h2 className={styles.subscriptionHeading}>
-            Fique por dentro das novidades!
-          </h2>
-          <p className={styles.subscriptionText}>
-            Assine nossa newsletter e receba atualizações sobre novos
-            lançamentos, promoções exclusivas e dicas de leitura.
-          </p>
-          <div className={styles.subscriptionForm}>
-            <input
-              type="email"
-              className={styles.subscriptionInput}
-              placeholder="Seu melhor e-mail"
-            />
-            <button className={styles.subscribeButton}>Assinar</button>
-          </div>
-        </div>
-      </section>
+      <Subscription />
 
       {/* SHOPPING CART */}
       <div className={styles.shoppingCart}>
